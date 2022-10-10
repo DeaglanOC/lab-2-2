@@ -6,7 +6,8 @@ using UnityEngine . InputSystem ;
 public class PlayerController : MonoBehaviour {
 
     public Vector2 moveValue ;
-    public float speed ;
+    public float speed=500 ;
+    
 
     void OnMove ( InputValue value ) {
         moveValue = value . Get < Vector2 >() ;
